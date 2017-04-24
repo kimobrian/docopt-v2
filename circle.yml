@@ -1,0 +1,15 @@
+machine:
+  python:
+    version: 3.5.2
+
+dependencies:
+  override:
+    - pip install -r requirements.txt
+
+test:
+  override:
+    - nosetests  --with-coverage --cover-package=coveralls
+  post:
+    - coverage run *.py
+    - coverage report
+    - coveralls
