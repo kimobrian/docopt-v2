@@ -10,6 +10,6 @@ test:
   override:
     - nosetests
   post:
-    - coverage run *.py
+    - coverage run functions.py
     - coverage report
     - coveralls
