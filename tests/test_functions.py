@@ -28,7 +28,7 @@ class TestOperations(TestCase):
     def test_multiple_with_no_values(self):
         """Test addition of multiple values without any values"""
         summation = self.ops.add_multiple()
-        self.assertEqual(summation, "No numbers provided")
+        self.assertEqual(summation, "No values provided")
 
     def test_add_multiple(self):
         """Test addition of multiple values"""
