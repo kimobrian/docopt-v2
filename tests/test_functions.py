@@ -58,7 +58,7 @@ class TestOperations(TestCase):
     def test_multiple_operations_invalid_sign(self):
         """Test invalid operation using multiple operations function"""
         summation = self.ops.multiple_operations(20, 5, "u")
-        self.assertEqual(summation, "Invalid Operation")
+        self.assertEqual(summation, "Unsupported Operation")
 
     def test_multiple_operations_invalid_values(self):
         """Test invalid values using multiple operations function"""
