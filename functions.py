@@ -6,24 +6,30 @@ class Operations:
     def add(self, a, b):
         """Adding two numbers"""
         try:
-            return a + b
+            total = int(a) + int(b)
+            print(total)
+            return total
         except:
+            print("Invalid Entry. Use numbers only!!!")
             return "Invalid Entry"
 
     def add_multiple(self, *args):
         """Adding multiple numbers"""
         if not args:
-            return "No numbers provided"
+            return "No values provided"
         total = 0
         try:
             for value in args:
-                total += value
+                total += int(value)
             return total
-        except:
+        except Exception as e:
+            print(e)
             return "Invalid Values"
 
     def multiple_operations(self, a, b, sign):
         try:
+            a = int(a)
+            b = int(b)
             if sign == "+":
                 return a + b
             elif sign == "*":
@@ -31,7 +37,7 @@ class Operations:
             elif sign == "-":
                 return a-b
             else:
-                return "Invalid Operation"
+                return "Unsupported Operation"
         except:
             return "Invalid Values"
 
