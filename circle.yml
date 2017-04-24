@@ -8,7 +8,7 @@ dependencies:
 
 test:
   override:
-    - nosetests  --with-coverage --cover-package=coveralls
+    - nosetests
   post:
     - coverage run *.py
     - coverage report
