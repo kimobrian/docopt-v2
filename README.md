@@ -5,7 +5,7 @@ Docopt App with Advanced Concepts
 
 ## Usage
 
-Start application with `python app.py -r`
+Start application with `python app.py -i`
 
 To get usage on commands, do:
 
